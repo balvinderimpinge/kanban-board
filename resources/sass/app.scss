@@ -1,0 +1,235 @@
+// Fonts
+//@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Vaiables
+@import 'variables';
+
+.error {
+    color: rgb(141, 15, 15);
+}
+.link:hover {
+    cursor: pointer;
+}
+input, textarea, select {
+    padding: 8px 12px;
+    font-size: 1em;
+}
+.d-flex {
+    display: flex;
+}
+.pull-right {
+    float: right;
+}
+section {
+    display: block;
+}
+.section {
+    padding: 0.5rem 2rem;
+}
+.container {
+    margin: 0 auto;
+    position: relative;
+}
+.columns {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+    margin-top: -0.75rem;
+}
+.column {
+    width: calc(25% - 0.75rem - 8px);
+    float: left;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+}
+
+.button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 1rem;
+    height: 2.25em;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    line-height: 1.5;
+    padding-bottom: calc(0.375em - 1px);
+    padding-left: calc(0.625em - 1px);
+    padding-right: calc(0.625em - 1px);
+    padding-top: calc(0.375em - 1px);
+    position: relative;
+    vertical-align: top;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: white;
+    border-color: #dbdbdb;
+    color: #363636;
+    cursor: pointer;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    text-align: center;
+    white-space: nowrap;
+
+    &.is-black {
+        background-color: #0a0a0a;
+        border-color: transparent;
+        color: white;
+    }
+}
+
+/** Card */
+.card {
+    background-color: white;
+    -webkit-box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+            box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    color: #4a4a4a;
+    max-width: 100%;
+    position: relative;
+    margin-bottom: 5px;
+
+    &-header {
+        -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+        -webkit-box-shadow: 0 1px 2px rgba(10, 10, 10, 0.1);
+                box-shadow: 0 1px 2px rgba(10, 10, 10, 0.1);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+
+        &-title {
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            color: #363636;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-flex: 1;
+                -ms-flex-positive: 1;
+                    flex-grow: 1;
+            font-weight: 700;
+            padding: 0.75rem;
+
+            &.is-centered {
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+            }
+        }
+    }
+
+    &-content {
+        padding: 1.5rem;
+    }
+
+    &-footer {
+        border-top: 1px solid #dbdbdb;
+        -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+                align-items: stretch;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+
+        &-item {
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-preferred-size: 0;
+                flex-basis: 0;
+            -webkit-box-flex: 1;
+                -ms-flex-positive: 1;
+                    flex-grow: 1;
+            -ms-flex-negative: 0;
+                flex-shrink: 0;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            padding: 0.75rem;
+        }
+    }
+}
+
+/** Tags */
+.tags {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+
+    &-tag {
+        margin-bottom: 0.5rem;
+        font-size: 1em;
+
+        &:not(body) {
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            background-color: whitesmoke;
+            border-radius: 3px;
+            color: #4a4a4a;
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            font-size: 0.75rem;
+            height: 2em;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            line-height: 1.5;
+            padding-left: 0.75em;
+            padding-right: 0.75em;
+            white-space: nowrap;
+
+            &.is-white {
+                background-color: white;
+                color: #0a0a0a;
+            }
+            &.is-black {
+                background-color: #0a0a0a;
+                color: white;
+            }
+            &.is-light {
+                background-color: whitesmoke;
+                color: #363636;
+            }
+            &.is-dark {
+                background-color: #363636;
+                color: whitesmoke;
+            }
+            &.is-primary {
+                background-color: #00d1b2;
+                color: #fff;
+            }
+            &.is-danger {
+                background-color: #81140c;
+                color: #fff;
+            }
+        }
+    }
+}
