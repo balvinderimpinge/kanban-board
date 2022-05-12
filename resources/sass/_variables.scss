@@ -18,10 +18,16 @@
 }
 
 $rules: [
+    [ma, margin],
     [ml, margin-left],
     [mt, margin-top],
     [mb, margin-bottom],
     [mr, margin-right],
+    [pa, margin],
+    [pl, margin-left],
+    [pt, margin-top],
+    [pb, margin-bottom],
+    [pr, margin-right],
 ];
 
 @each $item in $rules {

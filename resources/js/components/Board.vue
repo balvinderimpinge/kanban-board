@@ -1,7 +1,7 @@
 <template>
     <div>
         <modal name="edit_card" :clickToClose="false">
-            <div class="pa-2">
+            <div class="pa-3">
                 <h2 class="mt-0">Update Card</h2>
                 <input type="text" v-model="card_title" /><br/><br/>
                 <textarea v-model="card_description" cols="30" rows="5"></textarea><br/><br/>
